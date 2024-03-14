@@ -1,0 +1,10 @@
+flask
+flask-smorest
+flask-cors
+marshmallow
+sqlalchemy
+flask-sqlalchemy
+Flask-Migrate
+Flask-JWT-Extended
+psycopg2
+passlib

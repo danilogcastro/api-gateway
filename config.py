@@ -1,0 +1,5 @@
+import os
+
+class Config:
+  # IF NECESSARY, LOAD DEVELOPMENT ONLY CONFIGURATIONS
+  pass
