@@ -9,6 +9,8 @@ import models
 
 from db import db
 from resources.user import blp as UserBlueprint
+from resources.store import blp as StoreBlueprint
+from resources.reward import blp as RewardBlueprint
 
 def create_app(db_url=None):
   app = Flask(__name__)
@@ -23,11 +25,8 @@ def create_app(db_url=None):
   api = Api(app)
   jwt = JWTManager(app)
 
-  # PRECISO?
-  # with app.app_context():
-  #   db.create_all()
-
   api.register_blueprint(UserBlueprint)
+  api.register_blueprint(StoreBlueprint)
+  api.register_blueprint(RewardBlueprint)
 
-  
   return app
